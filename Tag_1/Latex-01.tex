@@ -7,8 +7,13 @@
 \usepackage{blindtext} % Dummy-Text
 \usepackage{microtype} % Mikrotypografie-Erweiterungen aktivieren
 
-\usepackage{hyperref} % Links
+\usepackage{graphicx} % Dateitypen: PNG, PDF, JPG
 
+\usepackage{showlabels}
+\usepackage{todonotes}
+
+
+\usepackage{hyperref} % Links, als letztes Paket laden
 \usepackage{hyperref} % Link Setup
 \hypersetup{
     bookmarks=true,                     % show bookmarks bar
@@ -37,19 +42,36 @@
 
 \tableofcontents % Inhaltsverzeichnis
 
+\listoffigures
+
+\listoftodos
 
 \clearpage
 
 \section{Einführung}
-\subsection{Fragestellung}
+\subsection{Fragestellung} \todo{fsadgfdsg}
 
-In Abschnitt \ref{sec:fazit} zeige ich warum.
+In Abschnitt \ref{sec:fazit} zeige ich warum, in Abbildung \ref{fig:katze} auf Seite \pageref{fig:katze} zeige ich wieso
 
 Wieviel \% brauche ich für 100 \$? % Diverse Sonderzeichen brauchen den Backslash
 
 Es gibt Empfehlungen zu LaTeX.
 Am besten pro Satz eine Zeile benutzen.
 Dann tut sich LaTeX leichter damit, den Ort eines Fehlers zu kennzeichnen.
+
+\includegraphics[width=0.75\textwidth]{Bilder/Katze}
+
+
+\begin{figure}
+\centering
+\includegraphics[width=0.75\textwidth]{Bilder/Katze}
+\caption{Meine freche Katze}\label{fig:katze}
+\end{figure}
+
+
+
+
+
 
 Ein neuer Absatz erfordert eine leere Zeile davor
 
@@ -66,6 +88,14 @@ Ein neuer Absatz erfordert eine leere Zeile davor
 
 \paragraph{Hallo} \blindtext[5]
 
+\begin{figure}
+\centering
+\includegraphics[width=0.75\textwidth]{Bilder/Katze1}
+\caption{Meine kuschelige Katze}\label{fig:katze1}
+\end{figure}
+
+
+
 \paragraph{Welt} \blindtext[5]
 
 \subparagraph{Hello} \blindtext[5]
@@ -78,6 +108,13 @@ Ein neuer Absatz erfordert eine leere Zeile davor
 
 
 \section{Fazit}\label{sec:fazit}
+
+\begin{figure}
+\centering
+\includegraphics[width=0.75\textwidth]{Bilder/miau}
+\caption{Meine wuschelige Katze}\label{fig:miau}
+\end{figure}
+
 
 \blindtext[5]
 
