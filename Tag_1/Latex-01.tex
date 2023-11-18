@@ -12,6 +12,7 @@
 \usepackage{showlabels}
 \usepackage{todonotes}
 
+\usepackage{booktabs}
 
 \usepackage{hyperref} % Links, als letztes Paket laden
 \usepackage{hyperref} % Link Setup
@@ -44,6 +45,8 @@
 
 \listoffigures
 
+\listoftables
+
 \listoftodos
 
 \clearpage
@@ -69,10 +72,6 @@ Dann tut sich LaTeX leichter damit, den Ort eines Fehlers zu kennzeichnen.
 \end{figure}
 
 
-
-
-
-
 Ein neuer Absatz erfordert eine leere Zeile davor
 
 \blindtext[5]
@@ -85,6 +84,15 @@ Ein neuer Absatz erfordert eine leere Zeile davor
 \subsubsection{Internationale Literatur}
 
 \blindtext[5]
+
+% Caption geht in den KOMA Klassen auch über den 
+% captionof Befehl
+\begin{center}
+\includegraphics[width=0.75\textwidth]{Bilder/Katze}
+\captionof{figure}{Meine superfreche Katze}\label{fig:katze423}
+\end{center}
+
+
 
 \paragraph{Hallo} \blindtext[5]
 
@@ -118,6 +126,26 @@ Ein neuer Absatz erfordert eine leere Zeile davor
 
 \blindtext[5]
 
+\section{Tabellen}
+
+Hallo, ich bin ein Text mit \textbf{verschiedenartig} \textit{formatierten}    Wörtern, dies \textbf{\textit{kann man auch}} kombinieren, einige \textsl{Fonts haben auch} geneigte Schnitte
+
+\clearpage
+
+\begin{tabular}{|l|c|r|p{5cm}|} \hline
+\textbf{Spalte 1} & \textbf{Spalte 2} & \textbf{Spalte  3} & \textbf{Spalte  4} \\ \hline \hline
+Hallo & Welt & ich & bin ein kleiner Text \\ \hline 
+Hallihallo & Welt und World & ich bin nicht & bin ein kleiner Text, mit vielen Wörtern \\ \hline
+\end{tabular}\vspace*{1cm}
+
+\begin{table}
+\caption{Meine erste schöne Tabelle}\label{tab:erste}
+\begin{tabular}{lcrp{5cm}} \toprule
+\textbf{Spalte 1} & \textbf{Spalte 2} & \textbf{Spalte  3} & \textbf{Spalte  4} \\ \midrule
+Hallo & Welt & ich & bin ein kleiner Text \\ 
+Hallihallo & Welt und World & ich bin nicht & bin ein kleiner Text, mit vielen Wörtern \\ \bottomrule
+\end{tabular}
+\end{table}
 
 \end{document}
 
