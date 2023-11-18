@@ -1,3 +1,7 @@
+%!TEX TS-program = Arara
+% arara: pdflatex: {shell: no}
+% arara: pdflatex: {shell: no}
+
 \documentclass[12pt,parskip=half]{scrartcl}
 
 \author{Uwe Ziegenhagen}
@@ -13,6 +17,7 @@
 \usepackage{todonotes}
 
 \usepackage{booktabs}
+\usepackage{multirow}
 
 \usepackage{hyperref} % Links, als letztes Paket laden
 \usepackage{hyperref} % Link Setup
@@ -50,6 +55,8 @@
 \listoftodos
 
 \clearpage
+
+\section{ewrwerwer}
 
 \section{Einführung}
 \subsection{Fragestellung} \todo{fsadgfdsg}
@@ -146,6 +153,37 @@ Hallo & Welt & ich & bin ein kleiner Text \\
 Hallihallo & Welt und World & ich bin nicht & bin ein kleiner Text, mit vielen Wörtern \\ \bottomrule
 \end{tabular}
 \end{table}
+
+\begin{table}
+\caption{Meine erste schöne Tabelle}\label{tab:zweite}
+\begin{tabular}{lcrp{5cm}} \toprule[1.5pt]
+\textbf{Spalte 1} & \textbf{Spalte 2} & \textbf{Spalte  3} & \textbf{Spalte  4} \\ \cmidrule[2pt](rl){1-4}
+Hallo & Welt & ich & bin ein kleiner Text \\ 
+Hallihallo & Welt und World & ich bin nicht & bin ein kleiner Text, mit vielen Wörtern \\ \bottomrule[1.5pt]
+\end{tabular}
+\end{table}
+
+\begin{tabular}{ccccccccc}
+1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 \\
+1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 \\
+1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 \\
+\multicolumn{2}{c}{a} & 3 & 4 & 5 & 6 & 7 & 8 & 9 \\
+1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 \\
+1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 \\
+1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 \\
+\multirow[c]{2}{*}{a} & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 \\
+  & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 \\
+1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 \\
+1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 \\
+\end{tabular}
+
+Hallo Welt
+
+Hallo \hspace*{1cm}       Welt
+
+Hallo \hfill Welt \vfill Welt
+
+
 
 \end{document}
 
