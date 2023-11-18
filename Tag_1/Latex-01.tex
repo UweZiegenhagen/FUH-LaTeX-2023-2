@@ -1,4 +1,4 @@
-\documentclass[12pt]{scrartcl}
+\documentclass[12pt,parskip=half]{scrartcl}
 
 \author{Uwe Ziegenhagen}
 \title{Mein erstes \LaTeX-Dokument}
@@ -7,16 +7,51 @@
 \usepackage{blindtext}
 \usepackage{microtype}
 
+\usepackage{hyperref}
+
+\usepackage{hyperref}
+\hypersetup{
+    bookmarks=true,                     % show bookmarks bar
+    unicode=false,                      % non - Latin characters in Acrobat’s bookmarks
+    pdftoolbar=true,                        % show Acrobat’s toolbar
+    pdfmenubar=true,                        % show Acrobat’s menu
+    pdffitwindow=false,                 % window fit to page when opened
+    pdfstartview={FitH},                    % fits the width of the page to the window
+    pdftitle={Mein erstes Dokument},                        % title
+    pdfauthor={Uwe Ziegenhagen},                 % author
+    pdfsubject={Abschlussarbeit},                   % subject of the document
+    pdfcreator={LaTeX},                   % creator of the document
+    pdfproducer={pdflatex},             % producer of the document
+    pdfkeywords={Uwe, Ziegenhagen},   % list of keywords
+    pdfnewwindow=true,                  % links in new window
+    colorlinks=true,                        % false: boxed links; true: colored links
+    linkcolor=blue,                          % color of internal links
+    filecolor=blue,                     % color of file links
+    citecolor=blue,                     % color of file links
+    urlcolor=blue                        % color of external links
+}
+
+
 \begin{document}
 \maketitle
 
-\tableofcontents
+\tableofcontents % Inhaltsverzeichnis
 
 
 \clearpage
 
 \section{Einführung}
 \subsection{Fragestellung}
+
+In Abschnitt \ref{fazit} zeige ich warum.
+
+Wieviel \% brauche ich für 100 \$? % Diverse Sonderzeichen brauchen den Backslash
+
+Es gibt Empfehlungen zu LaTeX.
+Am besten pro Satz eine Zeile benutzen.
+Dann tut sich LaTeX leichter damit, den Ort eines Fehlers zu kennzeichnen.
+
+Ein neuer Absatz erfordert eine leere Zeile davor
 
 \blindtext[5]
 
@@ -38,11 +73,14 @@
 
 \section{Untersuchung}
 
-\blindtext[5]
+\blindtext[5] 
 
-\section{Fazit}
+
+
+\section{Fazit}\label{fazit}
 
 \blindtext[5]
 
 
 \end{document}
+
