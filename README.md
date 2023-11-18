@@ -46,6 +46,7 @@ Die Kursinhalte sind flexibel und orientieren sich am Bedarf und Tempo der Teiln
 
 * Vorstellung der Beteiligten, wer bin ich und wer seid ihr, was sind eure Lernziele?
 * Historie von TeX und LaTeX
+* Vorstellung von DANTE e.V.
 * Check der Umgebungen bzw. Installationen mittels "Hallo \LaTeX" Dokument
 * Klassen, Pakete, Umgebungen und Befehle
 * Warum man article, report und book nicht unbedingt nutzen sollte -- die KOMA-Klassen
@@ -55,15 +56,16 @@ Die Kursinhalte sind flexibel und orientieren sich am Bedarf und Tempo der Teiln
 * Einfache Bilder einbetten, Bilderverzeichnisse
 * Einfacher Tabellensatz und Tabellenverzeichnisse
 * Mehr zum Bilder einbetten: ``subfigure`` und ``subcaption`` 
+* LaTeX automatisieren mit ``Arara``
+* ``nicefrac`` und ``nicematrix``
+* Einheitensatz mit ``siunitx``
 
 
 ### Tag 2 - Tabellen, Mathematik, und mehr
 
-* Vorstellung von DANTE e.V.
 * Wiederholung vom 1. Tag, Fragen beantworten
 * Wir bauen eine Vorlage für Seminar- und Abschlussarbeiten: ``titlepage``, ``scrpage``
 * Präsentationen mit ``Beamer``
-* LaTeX automatisieren mit ``Arara``
 * Schneller TeX mit Autohotkey & Co
 * Briefe setzen mit ``scrlttr2``
 * Mehr zu Mathematiksatz (mit ``amsmath``)
@@ -77,8 +79,8 @@ Die Kursinhalte sind flexibel und orientieren sich am Bedarf und Tempo der Teiln
 * Bitte Jabref von www.jabref.org installieren, kostet nichts und ist sehr gut. 
   Alternativ kann man die entsprechenden Dateien auch mit dem Texteditor bearbeiten.
 * Komplexe Bibliografien mit ``biblatex``, ``biber`` und ``jabref``
-* ``nicefrac`` und ``nicematrix``
-* Einheitensatz mit ``siunitx``
+
+
 
 * Grafiken erstellen mit LaTeX-Paketen, Kurze Einführung ``TikZ``
 * Fonts für ``pdflatex``, der LaTeX Font Katalog (https://tug.org/FontCatalogue/)

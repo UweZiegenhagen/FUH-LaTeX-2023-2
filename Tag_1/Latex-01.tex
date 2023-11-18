@@ -19,6 +19,13 @@
 \usepackage{booktabs}
 \usepackage{multirow}
 
+\usepackage{amssymb}
+\usepackage{nicefrac}
+\usepackage{siunitx}
+
+\usepackage[standard,thmmarks]{ntheorem}
+
+
 \usepackage{hyperref} % Links, als letztes Paket laden
 \usepackage{hyperref} % Link Setup
 \hypersetup{
@@ -183,6 +190,79 @@ Hallo \hspace*{1cm}       Welt
 
 Hallo \hfill Welt \vfill Welt
 
+\section{Mathematik-Satz mit \LaTeX}
+
+Hallo, ich bin eine Formel $a^2+b^2=c^2$ im Fließtext in \TeX-Notation.
+
+Hallo, ich bin eine abgesetzte Formel $$a^2+b^2=c^2$$ in \TeX-Notation.
+
+Hallo, ich bin eine Formel \(a^2+b^2=c^2\) im Fließtext in \LaTeX-Notation.
+
+Hallo, ich bin eine abgesetzte Formel \[a^2+b^2=c^2\] in \LaTeX-Notation.
+
+Siehe Formel \ref{eq:f1}
+
+\begin{equation}
+a^2+b^2=c^{-2} \Rightarrow \int_{\infty}^{-1}  \sin x  \alpha \beta \gamma \label{eq:f1}
+\end{equation}
+
+\begin{equation}
+x_{1, 2} = -\frac{p}{2} \pm \sqrt{ \left(\frac{p}{2}\right)^2 - q }
+\end{equation}
+
+\begin{equation}
+\sum_{x=1}^{\infty} x^2  \rightarrow \prod_{x=1}^{\infty} x^2  \Rightarrow \prod_{x=1}^{\infty} x^2 \qquad \nicefrac{1}{2}\Box
+\end{equation}
+
+% https://www.dickimaw-books.com/latex/thesis/html/ntheorem.html
+
+
+\begin{Definition}[Tautology]\label{def:tautology}
+A \emph{tautology} is a proposition that is always true for any value of its variables.
+\end{Definition}
+
+\begin{Definition}[Contradiction]\label{def:contradiction}
+A \emph{contradiction} is a proposition that is always false for any value of its variables.
+\end{Definition}
+
+\begin{Theorem}
+If proposition $P$ is a tautology then $\sim P$ is a contradiction, and conversely.
+\begin{Proof}
+If $P$ is a tautology, then all elements of its truth table are true (by Definition~\ref{def:tautology}), so all elements of the truth table for $\sim P$ are false, therefore $\sim P$ is a contradiction (by Definition~\ref{def:contradiction}).
+\end{Proof}
+\end{Theorem}
+
+\begin{Example}\label{ex:rain}
+``It is raining or it is not raining'' is a tautology, but ``it is not raining and it is raining'' is a contradiction.
+\end{Example}
+
+\begin{Remark}
+Example~\ref{ex:rain} used De Morgan's Law $\sim (p \vee q) \equiv \sim p \wedge \sim q$.
+\end{Remark}
+
+\begin{Proof}
+Example~\ref{ex:rain} used De Morgan's Law $\sim (p \vee q) \equiv \sim p \wedge \sim q$. \qed
+\end{Proof}
+
+\section{Einheitensatz mit \texttt{siunitx}}
+
+\num{1234567890,15645}
+
+$100 m/s^2$ sieht doof aus
+
+\si{\m/\second^2}
+
+\SI{1231,484810}{\m/\second^2}
+
+\ang{90}
+
+\numrange{1}{100}
+
+\begin{tabular}{lS}
+1 & 12345345.46 \\
+1 & 1345.7 \\
+1 & 12345345.897987 \\
+\end{tabular}
 
 
 \end{document}
