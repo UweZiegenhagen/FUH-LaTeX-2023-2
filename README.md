@@ -64,30 +64,27 @@ Die Kursinhalte sind flexibel und orientieren sich am Bedarf und Tempo der Teiln
 ### Tag 2 - Tabellen, Mathematik, und mehr
 
 * Wiederholung vom 1. Tag, Fragen beantworten
+* Schneller TeX mit Autohotkey & Co
+* Mehr zu Mathematiksatz (mit ``amsmath``)
 * Wir bauen eine Vorlage für Seminar- und Abschlussarbeiten: ``titlepage``, ``scrpage``
 * Präsentationen mit ``Beamer``
-* Schneller TeX mit Autohotkey & Co
 * Briefe setzen mit ``scrlttr2``
-* Mehr zu Mathematiksatz (mit ``amsmath``)
+* Quellcode-Listings einfügen mit dem ``Listings`` Paket
+* Syntaxhighlighting mit pygments
 
 
 ### Tag 3 - Bibliografien und Präsentationen
 
 * Zusammenfassung vom 2. Termin, Wiederholung
-* Quellcode-Listings einfügen mit dem ``Listings`` Paket
 * Einfache Bibliografien -- die ``thebibliography`` Umgebung
 * Bitte Jabref von www.jabref.org installieren, kostet nichts und ist sehr gut. 
   Alternativ kann man die entsprechenden Dateien auch mit dem Texteditor bearbeiten.
 * Komplexe Bibliografien mit ``biblatex``, ``biber`` und ``jabref``
-
-
-
 * Grafiken erstellen mit LaTeX-Paketen, Kurze Einführung ``TikZ``
 * Fonts für ``pdflatex``, der LaTeX Font Katalog (https://tug.org/FontCatalogue/)
 * Liste wichtiger Pakete: https://ctan.mc1.root.project-creative.net/info/first-packages/first-packages.html
 * Von ``pdflatex`` zu ``lualatex``, Systemschriften nutzen
 * Grundlagen der Satzautomatisierung von Textsatz mit Python (Ein Weg, Serienbriefe zu erzeugen...)
-* Syntaxhighlighting mit pygments
 * Umrahmte (farbige) Boxen mit ``tcolorbox`` (``texdoc tcolorbox``), alternativ siehe das ``mdframed`` Paket
 * Editoren: ``TeXworks`` versus ``Visual Studio Code`` 
 * Frage-und-Antwort-Teil: was fehlt euch noch, was wolltet ihr schon immer mal TeXen?
