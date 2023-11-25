@@ -1,0 +1,176 @@
+% !TeX root = Abschlussarbeit_Ziegenhagen.tex
+\chapter{Einführung}
+
+\section{a}
+\subsection{b}
+\subsection{c}
+
+\blindtext[5]
+
+
+\begin{table}[ht]
+\begin{center}
+\begin{tabular}{cp{0.7\textwidth}} \toprule
+\textbf{Formel} & \textbf{Erläuterung} \\ \midrule
+\( \exists[\{a\}]\mathbf{U} [\{b\}]0 \) & Es gibt keinen Pfad, auf dem so lange keine a-Transitionen möglich ist, bis keine b-Transition mehr möglich ist.\\
+\end{tabular}
+\end{center}
+\caption{Meine Tabelle}\label{tab:meine}
+\end{table}
+
+\person{Albert Einstein} sagt: 
+Mathematik im Fließtext \( \exists[\{a\}]\mathbf{U} [\{b\}]0 \)  mit runden Klammern 
+
+\[ \exists[\{a\}]\mathbf{U} [\{b\}]0 \]
+
+\begin{equation}
+\exists[\{a\}]\mathbf{U} [\{b\}]0
+\end{equation}
+
+\begin{equation}
+\sin 45 \avg 4568
+\end{equation}
+
+\section[Standard-\LaTeX-Mathematik]{Standard-\LaTeX-Mathematik, die ohne externe Pakete einfach so funktioniert}
+
+\begin{eqnarray} % mit Formelnummer
+y &=& (a + b)^2 \\
+y &=& a^2 + 2ab +b^2
+\end{eqnarray}
+
+\begin{eqnarray*} % ohne Formelnummer
+y &=& (a + b)^2 \\
+y &=& a^2 + 2ab +b^2 
+\end{eqnarray*}
+
+\blindtext
+
+\[
+\begin{array}{lcr}
+y + y + y &=& (a + b)^2 \\
+y &=& a^2 + 2ab +b^2 
+\end{array}
+\]
+
+\[ % LaTeX 
+\bordermatrix{
+   & 1 & 2 & 3 \cr
+1 & 4 & 2 & 156 \cr
+2 & 5 & 33 & 56 \cr
+3 & 6 & 2 & 88 \cr
+}
+\]
+
+\section*{Section ohne Eintrag im TOC}
+
+Macht man mit den gesternten Versionen von manchen Befehlen.
+
+\section{Mathematik mit AMSMath}
+
+\begin{align} % mit Nummern 
+a &= c \cdot x \\
+a &= c \cdot \tanh z + \sum_{i=1}^{1000} t
+\end{align}
+
+\begin{align*} % ohne Nummern 
+a &= c \cdot x \\
+a &= c \cdot \tanh z + \sum_{i=1}^{1000} t
+\end{align*}
+
+\begin{alignat}{3}
+a &= c \cdot x &= x\times y \leq 567 \\
+a &= c \cdot \tanh z + \alpha\omega &= \sum_{i=1}^{1000} t
+\end{alignat}
+
+\begin{alignat*}{3}
+a &= c \cdot x &= x\times y \leq 567 \\
+a &= c \cdot \tanh z + \alpha\omega &= \sum_{i=1}^{1000} t
+\end{alignat*}
+
+\[% Version ohne Klammern
+\begin{matrix} 
+1 & 0 & 0 \\ 
+0 & 1 & 0 \\ 
+0 & 0 & 1 \\ 
+\end{matrix}
+\]
+
+\[% mit runden Klammern (parentheses)
+\begin{pmatrix} 
+1 & 0 & 0 \\ 
+0 & 1 & 0 \\ 
+0 & 0 & 1 \\ 
+\end{pmatrix}
+\]
+
+\[% mit eckigen Klammern
+\begin{bmatrix} 
+1 & 0 & 0 \\ 
+0 & 1 & 0 \\ 
+0 & 0 & 1 \\ 
+\end{bmatrix}
+\]
+
+\[% mit geschweiften Klammern
+\begin{Bmatrix} 
+1 & 0 & 0 \\ 
+0 & 1 & 0 \\ 
+0 & 0 & 1 \\ 
+\end{Bmatrix}
+\]
+
+
+\[% mit senkrechten Strichen 
+\begin{vmatrix} 
+1 & 0 & 0 \\ 
+0 & 1 & 0 \\ 
+0 & 0 & 1 \\ 
+\end{vmatrix}
+\]
+
+\[% mit doppelten senkrechten Strichen 
+\det 
+\begin{Vmatrix} 
+\ddots  & 0 & \vdots \\ 
+0 & \cdots & \dots \\ 
+0 & 0 & 1 \\ 
+\end{Vmatrix}
+\text{ist eine Matrix}
+\]
+
+\section{Vektoren}
+
+%Standard-Vektorpfeil skaliert nicht mit
+\( \vec{a} \times \vec{def} \)
+
+%esvect Paket laden für \vv-Befehl
+\( \vv{a} \times \vv{def} \bigtriangleup \Omega  \)
+
+\section{Abstände}
+
+\( ab \) % kein Abstand
+
+\(a\,b \)
+
+\(a\;b\)
+
+\(a\quad b\)
+
+\(a\qquad b\)
+
+
+\begin{proof}
+fsdfsd
+\end{proof}
+
+\begin{theorem}
+fsdfsd
+\end{theorem}
+
+\begin{lemma}
+fsdfsd
+\end{lemma}
+
+\begin{corollary}
+fsdfsd
+\end{corollary}
