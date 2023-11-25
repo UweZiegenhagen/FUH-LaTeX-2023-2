@@ -1,16 +1,8 @@
-\documentclass[12pt, parskip=half,twopage]{scrreprt}
+\documentclass[12pt, parskip=half,liststotoc]{scrbook}
 
 \input{preamble}
 
-\usepackage{scrlayer-scrpage}
-\pagestyle{scrheadings}
 
-\ohead[\headmark]{\headmark} %
-\ofoot[\pagemark]{\pagemark} % 
-\ihead[]{}
-\ifoot[]{}
-\chead[]{}
-\cfoot[]{}
 
 % Beim Bearbeiten einzelner Kapitel
 %\includeonly{chapter_conclusion}
@@ -41,7 +33,7 @@ Fachbereich Mathematik und Informatik}
 2. Betreuer Prof. Dr. Angela Merkel 
 \end{titlepage}
 
-
+\frontmatter
 
 \tableofcontents
 
@@ -49,10 +41,18 @@ Fachbereich Mathematik und Informatik}
 
 \listoftables
 
+\mainmatter
+
 \include{chapter_intro}
 
 \include{chapter_analysis}
 
 \include{chapter_conclusion}
+
+\backmatter
+
+\chapter{Anhang}
+
+\blindtext[10]
 
 \end{document}

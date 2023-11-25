@@ -1,3 +1,4 @@
+% !TeX root = Abschlussarbeit_Ziegenhagen.tex
 \usepackage[ngerman]{babel} % eindeutschen
 \usepackage{blindtext} % Dummy-Text
 \usepackage{booktabs} % schöne Tabellen
@@ -20,6 +21,20 @@
 \makeatother
 
 \newcommand{\person}[1]{\textcolor{orange}{\textsc{#1}}}
+
+\usepackage{scrlayer-scrpage}
+\pagestyle{scrheadings}
+
+\usepackage{lastpage}
+
+\ohead[\headmark]{\headmark} %
+\ofoot[\pagemark]{\pagemark\ von \pageref{LastPage}} % 
+\ihead[]{}
+\ifoot[]{}
+\chead[]{}
+\cfoot[]{}
+
+
 
 %hyperref als letztes Paket laden, außer man weiß genau was man tut
 \usepackage{hyperref}
