@@ -1,6 +1,16 @@
-\documentclass[12pt, parskip=half]{scrreprt}
+\documentclass[12pt, parskip=half,twopage]{scrreprt}
 
 \input{preamble}
+
+\usepackage{scrlayer-scrpage}
+\pagestyle{scrheadings}
+
+\ohead[\headmark]{\headmark} %
+\ofoot[\pagemark]{\pagemark} % 
+\ihead[]{}
+\ifoot[]{}
+\chead[]{}
+\cfoot[]{}
 
 % Beim Bearbeiten einzelner Kapitel
 %\includeonly{chapter_conclusion}
