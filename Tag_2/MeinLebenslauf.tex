@@ -1,12 +1,15 @@
 \documentclass{moderncv}
-
-\usepackage{csquotes,blindtext}
-
 \moderncvtheme{classic}
+
+
+\usepackage{csquotes}
+\usepackage{blindtext}
+\usepackage{ifthen}
+\newboolean{wissver}
+\setboolean{wissver}{true} % false zum Ausblenden
 
 \firstname{Donald}
 \lastname{Duck}
-
 \address{Am Geldspeicher 1, 12345 Entenhausen}
 \email{donald@duck.com}
 \mobile{0800-13248779879}
@@ -34,12 +37,14 @@
 {Berlin}{}
 {Leistungskurse Physik und Englisch}
 
+
+
+\ifthenelse{\boolean{wissver}}{
 \section{Wiss. Veröffentlichungen}
 
 \cventry{2023}{Nature}{\enquote{On the Application of Quantum Computing in the Navy}}
 {Issue 2/2023, pp. 100--120}{}
 {\blindtext}
-
-
+}{}
 
 \end{document}
