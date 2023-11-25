@@ -1,0 +1,48 @@
+\documentclass[12pt, parskip=half]{scrreprt}
+
+\input{preamble}
+
+% Beim Bearbeiten einzelner Kapitel
+%\includeonly{chapter_conclusion}
+
+% Gegenstück  \excludeonly Paket (zu checken)
+%\usepackage[only]{excludeonly}
+%\excludeonly{chapter_conclusion}
+ 
+
+\begin{document}
+% Siehe auch das uni-titlepage Paket von Markus Kohm
+\begin{titlepage}
+{\bfseries\Large Fernuniversität Hagen \\
+Fachbereich Mathematik und Informatik}
+
+\vspace*{4cm}
+\begin{center}
+\bfseries\Large Abschlussarbeit zur Erlangung des Grades Diplom-Informatiker
+\end{center}
+
+\vspace*{2cm}
+\begin{center}
+\bfseries\Large vorgelegt von \\ Daniel Düsentrieb
+\end{center}
+
+\vfill
+1. Betreuer: Prof. Dr. Manfred Oppenheimer \\
+2. Betreuer Prof. Dr. Angela Merkel 
+\end{titlepage}
+
+
+
+\tableofcontents
+
+\listoffigures
+
+\listoftables
+
+\include{chapter_intro}
+
+\include{chapter_analysis}
+
+\include{chapter_conclusion}
+
+\end{document}
