@@ -1,5 +1,3 @@
-%!TEX TS-program = Arara
-% arara: pdflatex
 
 \documentclass[helvetica,german,11pt]{europecv}
 
@@ -58,7 +56,7 @@
 \ecvnationality{Ente}
 \ecvdateofbirth{\ifthenelse{\boolean{privat}}{02.09.1950 in Entenhausen, Entland}{1950}}
 \ifthenelse{\boolean{privat}}{
-\AddToShipoutPicture*{\put(400,700){\includegraphics[height=3.5cm]{miau}}}
+\AddToShipoutPicture*{\put(400,700){\includegraphics[height=3.5cm]{Bilder/Katze}}}
 }
 {
 \AddToShipoutPicture*{\put(400,700){\includegraphics[height=2.5cm]{miau}}}
