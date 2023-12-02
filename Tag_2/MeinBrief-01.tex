@@ -1,0 +1,27 @@
+\documentclass[12pt,fromalign=center,fromrule=aftername]{scrlttr2}
+
+\usepackage[ngerman]{babel}
+\usepackage{arev,blindtext}
+\usepackage{microtype}
+\setkomavar{fromname}{Donald Duck}
+\setkomavar{fromaddress}{Arme-Schlucker-Weg 32d, 12346 Entenhausen}
+\setkomavar{yourref}{Rauswurf2023-01}
+\setkomavar{yourmail}{\today}
+\setkomavar{myref}{Bettelbrief-1256}
+
+
+\begin{document}
+
+\begin{letter}{Dagobert Duck \\ Im Geldspeicher 1 \\ 12345 Entenhausen}
+
+\opening{Lieber Onkel Dagobert,}
+
+vielen Dank für Dein Schreiben vom \usekomavar{yourmail}. Wir hungern gern, du alter Geizhals!
+
+\blindtext[3]
+
+\closing{Deine hungernden Neffen}
+
+\end{letter}
+
+\end{document}
