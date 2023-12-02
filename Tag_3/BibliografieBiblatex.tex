@@ -1,4 +1,9 @@
-\documentclass[12pt,ngerman]{scrartcl}
+%!TEX TS-program = Arara
+% arara: pdflatex: {shell: yes}
+% arara: biber
+% arara: pdflatex: {shell: yes}
+
+\documentclass[12pt,ngerman,parskip=full]{scrartcl}
 
 \usepackage{babel}
 \usepackage{blindtext}
@@ -34,8 +39,22 @@
 
 \blinddocument
 
-Wie Professor Knuth in \cite{Duck2023} beschrieben hat.
+Wie Professor Knuth in \cite{Duck2023} beschrieben hat -- und was von \cite{Knuth1984} bestätigt wurde.
 
-\printbibliography
+\cite{Cao2021}
+
+\parencite{Knuth1984}
+
+Hallo ich werde eine Fußnote\footcite{Knuth1984}
+
+\citeauthor{Knuth1984} hat in seinem im Jahr \citeyear{Knuth1984} erschienen Buch \citetitle{Knuth1984} beschrieben, wie toll \TeX\ ist.
+
+
+\printbibliography % alle Einträge, die zitiert werden
+
+\printbibliography[title={Artikel},type=article]
+
+\printbibliography[title={Bücher},type=book]
+
 
 \end{document}
