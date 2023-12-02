@@ -1,0 +1,29 @@
+%!TEX TS-program = Arara
+% arara: pdflatex: {shell: yes}
+% arara: makeindex: {options: "-t gloss-02.glg -o gloss-02.gls gloss-02.glo"}
+% arara: pdflatex: {shell: yes}
+
+\documentclass{article}
+\usepackage[style=indexgroup]{glossaries}
+\makeglossaries % open indexing files
+\newglossaryentry{parrot}{name={parrot},
+description={a brightly coloured tropical bird}}
+\newglossaryentry{duck}{name={duck},
+description={a waterbird}}
+\newglossaryentry{puffin}{name={puffin},
+description={a seabird with a brightly coloured bill}}
+\newglossaryentry{penguin}{name={penguin},
+description={a flightless black and white seabird}}
+% a symbol:
+\newglossaryentry{alpha}{name={\ensuremath{\alpha}},
+sort={alpha},description={a variable}}
+% an acronym:
+\setacronymstyle{short-long}
+\newacronym{arpanet}{ARPANET}
+{Advanced Research Projects Agency Network}
+\begin{document}
+\Gls{puffin}, \gls{duck} and \gls{parrot}.
+\gls{arpanet} and \gls{alpha}.
+Next use: \gls{arpanet}.
+\printglossary
+\end{document}
